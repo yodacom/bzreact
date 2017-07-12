@@ -1,16 +1,16 @@
+const React = require('react');
 const Person = require('./person');
 
-const PersonList = function () {
+const PersonList = () => {
+  const people = [];
+  for (let i = 0; i < 5; i += 1) {
+    people.push(<Person />);
+  }
   return (
-    <div className="perosn-list">
-      <Person />
-      <Person />
-      <Person />
-      <Person />
-      <Person />
+    <div className="person-list">
+      {people}
     </div>
-
-    );
+  );
 };
 
-module.exports = PersonList;
+export default PersonList;

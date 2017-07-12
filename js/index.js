@@ -3,9 +3,8 @@ require('babel-polyfill');
 const React = require('react');
 const ReactDOM = require('react-dom');
 
-const Person = require('./components/person');
+const PersonList = require('./components/person-list');
 
 document.addEventListener('DOMContentLoaded', () => {
-  ReactDOM.render(<Person />, document.getElementById('app'));
+  ReactDOM.render(<PersonList />, document.getElementById('app'));
 });
-
